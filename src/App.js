@@ -1,11 +1,18 @@
-import React from 'react';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Container } from "react-bootstrap";
+import { HeaderApp } from "./components/HeaderApp";
+import { ListProducts } from "./components/ListProducts";
 
-function App() {
+const App = () => {
   return (
-    <>
-      <h1>Hola React</h1>
-    </>
+    <Container>
+      <div className="App">
+        <HeaderApp />
+        <ListProducts />
+      </div>
+    </Container>
   );
-}
+};
 
 export default App;
